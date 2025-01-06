@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BDF Packaging - Qwen ComfyUI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 顶部信息填写区 -->
+    <header class="header">
+        <h1>欢迎使用 Qwen ComfyUI</h1>
+        <p>请在下方选择您需要的功能。</p>
+    </header>
+
+    <!-- 六个功能区 -->
+    <main class="features-container">
+        <div class="feature">
+            <button class="feature-btn" data-feature="feature1">功能 1</button>
+        </div>
+        <div class="feature">
+            <button class="feature-btn" data-feature="feature2">功能 2</button>
+        </div>
+        <div class="feature">
+            <button class="feature-btn" data-feature="feature3">功能 3</button>
+        </div>
+        <div class="feature">
+            <button class="feature-btn" data-feature="feature4">功能 4</button>
+        </div>
+        <div class="feature">
+            <button class="feature-btn" data-feature="feature5">功能 5</button>
+        </div>
+        <div class="feature">
+            <button class="feature-btn" data-feature="feature6">功能 6</button>
+        </div>
+    </main>
+
+    <!-- 功能内容显示区 -->
+    <section id="feature-content" class="feature-content">
+        <!-- 功能1的内容 -->
+        <div id="feature1" class="content-section hidden">
+            <h2>功能 1: 输入Unusual Item</h2>
+            <p>在此部分，您可以输入相关信息，我们将对您的输入进行验证。</p>
+            
+            <!-- 用户输入表单 -->
+            <form id="userInputForm">
+                <div class="form-group">
+                    <label for="userInput">请输入您的内容:</label>
+                    <input type="text" id="userInput" name="userInput" required>
+                </div>
+                <button type="submit">提交</button>
+            </form>
+            <div id="message" class="message"></div>
+
+            <!-- 导航按钮 -->
+            <footer class="footer">
+                <button id="nextFeatureBtn" class="hidden">前往功能 2</button>
+            </footer>
+        </div>
+
+        <!-- 其他功能的内容可以在这里添加，初始时隐藏 -->
+        <div id="feature2" class="content-section hidden">
+            <h2>功能 2: 功能 2 的标题</h2>
+            <p>功能 2 的具体内容描述。</p>
+            <!-- 添加功能2的具体内容 -->
+        </div>
+
+        <div id="feature3" class="content-section hidden">
+            <h2>功能 3: 功能 3 的标题</h2>
+            <p>功能 3 的具体内容描述。</p>
+            <!-- 添加功能3的具体内容 -->
+        </div>
+
+        <div id="feature4" class="content-section hidden">
+            <h2>功能 4: 功能 4 的标题</h2>
+            <p>功能 4 的具体内容描述。</p>
+            <!-- 添加功能4的具体内容 -->
+        </div>
+
+        <div id="feature5" class="content-section hidden">
+            <h2>功能 5: 功能 5 的标题</h2>
+            <p>功能 5 的具体内容描述。</p>
+            <!-- 添加功能5的具体内容 -->
+        </div>
+
+        <div id="feature6" class="content-section hidden">
+            <h2>功能 6: 功能 6 的标题</h2>
+            <p>功能 6 的具体内容描述。</p>
+            <!-- 添加功能6的具体内容 -->
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

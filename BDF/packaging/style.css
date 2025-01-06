@@ -1,0 +1,208 @@
+/* style.css */
+
+/* 重置默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 顶部信息填写区 */
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.2em;
+}
+
+/* 六个功能区容器 */
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* 水平居中对齐 */
+    padding: 20px;
+    gap: 20px; /* 功能区之间的间距 */
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+/* 单个功能区 */
+.feature {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 150px; /* 调整宽度以适应一排 */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.feature-btn {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.feature-btn:hover {
+    background-color: #0056b3;
+}
+
+/* 功能内容显示区 */
+.feature-content {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+}
+
+.content-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+/* 用户输入表单 */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* 消息显示区 */
+.message {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1em;
+}
+
+/* 导航按钮 */
+.footer {
+    padding: 20px;
+    text-align: center;
+}
+
+#nextFeatureBtn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#nextFeatureBtn:hover {
+    background-color: #0056b3;
+}
+
+.footer .hidden {
+    display: none;
+}
+
+/* 响应式设计 */
+@media (max-width: 1200px) {
+    .feature {
+        width: 30%; /* 根据屏幕大小调整功能区宽度 */
+    }
+}
+
+@media (max-width: 768px) {
+    .features-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 80%;
+    }
+
+    .content-section {
+        width: 90%;
+    }
+}

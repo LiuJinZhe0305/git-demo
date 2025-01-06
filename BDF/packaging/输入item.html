@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>请输入 Unusual Item</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 顶部信息填写区 -->
+    <header class="header">
+        <h1>功能 1: 用户输入收集与验证</h1>
+        <p>在此部分，您可以输入相关信息，我们将对您的输入进行验证，并传递给下一个功能。</p>
+    </header>
+
+    <!-- 用户输入表单 -->
+    <main class="form-container">
+        <form id="userInputForm">
+            <div class="form-group">
+                <label for="userInput">请输入您的内容:</label>
+                <input type="text" id="userInput" name="userInput" required>
+            </div>
+            <button type="submit">提交</button>
+        </form>
+        <div id="message" class="message"></div>
+    </main>
+
+    <!-- 导航按钮 -->
+    <footer class="footer">
+        <button id="nextFeatureBtn" class="hidden">前往功能 2</button>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
